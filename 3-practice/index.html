@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Basic controls: Task 1</title>
+    <style>
+      body {
+        background-color: #fff;
+        color: #333;
+        font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
+        padding: 1em;
+        margin: 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      fieldset {
+        width: 400px;
+      }
+
+      ul {
+        list-style-type: none;
+      }
+
+      label {
+        display: inline-block;
+        width: 100px;
+        text-align: right;
+      }
+
+      input[type="text"] input[type="password"] {
+        width: 200px
+      }
+
+      input[type="submit"] {
+        margin: 10px 110px 0;
+      }
+    </style>
+  </head>
+<!--
+  1.) Create appropriate inputs for user ID and password.
+  2.) You should also associate them with their text labels semantically.
+  3.) Create a submit button inside the remaining list item, with button text 
+      of "Log in".
+-->
+  <body>
+    <form>
+      <fieldset>
+        <legend>Log In to Practice.com</legend>
+          <ul>
+            <li>
+              <label for="userid">User ID:</label>
+              <input type="text" id="userid" name="userid">
+            </li>
+            <li>
+              <label for="pass">Password:</label>
+              <input type="password" name="pass" id="pass">
+            </li>
+            <li>
+              <input type="submit" value="Submit">
+            </li>
+          </ul>
+      </fieldset>
+    </form>
+  </body>
+
+</html>

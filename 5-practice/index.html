@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Basic controls: Task 3</title>
+    <style>
+      body {
+        background-color: #fff;
+        color: #333;
+        font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
+        padding: 1em;
+        margin: 0;
+      }
+
+      * {
+        box-sizing: border-box;
+        border: 2px solid red;
+      }
+
+      form {
+        width: 350px;
+      }
+
+      ul {
+        list-style-type: none;
+      }
+
+      button {
+        margin: 0 120px;
+      }
+
+    </style>
+  </head>
+<!--
+  1.) Create a basic file picker.
+  2.) Allow the user to pick multiple files at once.
+  3.) Allow the file picker to accept JPG and PNG images only.
+-->
+  <body>
+    <form>
+        <ul>
+          <li>
+            <label for="gallery-img">Choose gallery images to upload</label>
+          </li>
+          <li>
+            <input type="file" name="img_upload" id="gallery-img"  
+              accept="image/jpg, image/png" multiple>
+          </li>
+        </ul>
+      <button>Submit</button>
+    </form>
+  </body>
+
+</html>

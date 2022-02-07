@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Basic controls: Task 2</title>
+    <style>
+      body {
+        background-color: #fff;
+        color: #333;
+        font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
+        padding: 1em;
+        margin: 0;
+      }
+
+      * {
+        box-sizing: border-box;
+        border: 2px solid red;
+      }
+
+      form {
+        width: 260px;
+      }
+
+      ul {
+        list-style-type: none;
+      }
+
+      button {
+        margin: 20px 95px;
+      }
+    </style>
+  </head>
+<!--
+  1.) Turn the first <fieldset>'s contents into a set of radio buttons — you 
+      should only be able to select one pony character at once.
+  2.) Make it so that the first radio button is selected upon page load.
+  3.) Turn the second <fieldset>'s content into a set of checkboxes.
+  4.) Add a couple more hotdog choices of your own.
+-->
+  <body>
+    <form>
+      <fieldset>
+        <legend>Who is your favorite pony?</legend>
+        <ul>
+          <li>
+            <input type="radio" name="pony" id="pinkie" value="pinkie" checked>
+            <label for="pinkie">Pinkie Pie</label>
+            
+          </li>
+          <li>
+            <input type="radio" name="pony" id="rainbow" value="rainbow">
+            <label for="rainbow">Rainbow Dash</label>
+
+          </li>
+          <li>
+            <input type="radio" name="pony" id="twilight" value="twilight">
+            <label for="twilight">Twilight Sparkle</label>
+
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Hotdog preferences</legend>
+        <ul>
+          <li>
+            <input type="checkbox" name="hotdog" id="vegan" value="vegan">
+            <label for="vegan">Vegan</label>
+          </li>
+          <li>
+            <input type="checkbox" name="hotdog" id="onions" value="onions">
+            <label for="onions">Onions</label>
+          </li>
+          <li>
+            <input type="checkbox" name="hotdog" id="texas_t" value="texas_t">
+            <label for="texas_t">Texas Tommie</label>
+          </li>
+          <li>
+            <input type="checkbox" name="hotdog" id="chicago" value="chicago">
+            <label for="chicago">Chicago-style</label>
+          </li>
+        </ul>
+      </fieldset>
+      <button>Submit</button>
+    </form>
+  </body>
+
+</html>
